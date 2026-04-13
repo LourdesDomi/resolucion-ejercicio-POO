@@ -1,1 +1,19 @@
+package model;
 
+public class CuentaCorriente extends Cuenta {
+
+    private double descubierto;
+
+    public CuentaCorriente(String titular, String numeroCuenta, double saldo, double descubierto) {
+        super(titular, numeroCuenta, saldo);
+        this.descubierto = descubierto;
+    }
+
+    public double getDescubierto() {
+        return descubierto;
+    }
+
+    public void setDescubierto(double descubierto) {
+        this.descubierto = descubierto;
+    }
+}
